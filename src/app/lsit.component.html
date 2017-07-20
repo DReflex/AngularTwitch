@@ -1,0 +1,10 @@
+<div class="box">
+  <a *ngFor = "let name of names" [routerLink]="['/stream', name.name]" class="col-1-4">
+<div class="names">
+<h3>  {{name.name}}</h3>
+
+
+</div><br>
+  </a>
+
+</div>

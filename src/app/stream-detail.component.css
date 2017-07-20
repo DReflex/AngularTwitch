@@ -1,0 +1,66 @@
+.box{
+
+  width:50%;
+  margin:auto;
+  margin-top:50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(74, 3, 3, 0.54);
+  background: linear-gradient(rgba(74, 3, 3, 0.54), rgba(219, 255, 0, 0.69));
+  text-align: center;
+}
+.box h1{
+  color:rgb(251, 220, 141);
+}
+.box h4{
+  color:rgb(0, 0, 0);
+  font-size: 20px;
+}
+a:link{
+  text-decoration: none;
+}
+.box img{
+  margin:auto;
+  max-width: 300px;
+}
+.stream{
+  width:50%;
+  margin:auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(43, 136, 71, 0.64);
+  background:linear-gradient(rgba(0, 99, 22, 0.73));
+  text-align: center;
+  color:rgb(140, 255, 155)
+}
+.stream img{
+  margin:auto;
+  max-width: 300px;
+}
+.details{
+  margin:auto;
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  color:rgb(43, 255, 0)
+}
+.logo{
+  width:20px;
+  margin:auto;
+}
+
+@media screen and (max-width:600px) {
+  .box{width: 70%}
+  .stream{width: 70%}
+
+}
+@media screen and (max-width:450px) {
+  .box{width: 90%}
+  .box img{width:250px}
+  .stream{width: 90%}
+  .stream img{width:250px}
+  .logo{width:20px !important;}
+}

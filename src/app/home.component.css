@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+.streams{
+  width:40%;
+  background-color: rgba(40, 0, 84, 0.3);
+  background: linear-gradient(rgba(40, 0, 84, 0.3), rgba(20, 8, 61, 0.82));
+  margin:auto;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+
+}
+a:link {
+    text-decoration: none;
+}
+.box{
+  color: rgb(205, 220, 249);
+  font-size: 20px;
+  text-shadow: 2px 4px rgb(49, 2, 117);
+  font-family: 'Anton', sans-serif;
+}
+.names{
+  margin: auto;
+  width:150px;
+  height:70px;
+  background-color: rgba(6, 0, 24, 0.66);
+  border-top: 2px solid rgb(22, 0, 85);
+  box-shadow: 2px 4px rgba(26, 4, 61, 0.76);
+  border-radius: 20px;
+}
+h3{
+  padding-top: 10px;
+  color:rgb(209, 220, 255);
+  font-size: 20px;
+  text-align: center;
+
+}
+a :hover{
+  background-color: rgba(10, 41, 110, 0.63);
+}
+
+@media screen and (max-width: 450px) {
+  .streams{
+    width:90%;
+    margin-top: 0px;
+  }
+
+}
