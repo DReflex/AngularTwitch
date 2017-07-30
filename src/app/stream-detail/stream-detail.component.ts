@@ -4,10 +4,10 @@ import { Location }                 from '@angular/common';
 import { DomSanitizer } from '@angular/platform-browser';
 
 
-import { StreamService } from './stream.service';
+import { StreamService } from '../stream.service';
 import 'rxjs/add/operator/switchMap';
 
-import { Name } from './name';
+import { Name } from '../name';
 
 
 @Component({

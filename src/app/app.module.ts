@@ -4,12 +4,12 @@ import { FormsModule }   from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 
 import { AppComponent }  from './app.component';
-import { StreamDetailComponent } from './stream-detail.component';
-import{ ListComponent } from './list.component';
+import { StreamDetailComponent } from './stream-detail/stream-detail.component';
+import{ ListComponent } from './list/list.component';
 
 import { StreamService } from './stream.service';
 
-import { HomeComponent } from './home.component'
+import { HomeComponent } from './home/home.component'
 
 import { AppRoutingModule } from './routing.module';
 

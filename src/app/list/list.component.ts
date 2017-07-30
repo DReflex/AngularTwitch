@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Name } from './name';
-import { StreamService } from './stream.service';
+import { Name } from '../name';
+import { StreamService } from '../stream.service';
 
 import { Router } from "@angular/router"
 
