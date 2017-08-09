@@ -12,9 +12,11 @@ import { StreamService } from './stream.service';
 import { HomeComponent } from './home/home.component'
 
 import { AppRoutingModule } from './routing.module';
+import { VideoComponent }   from './stream-detail/video/video.component';
+import { ChatComponent } from './stream-detail/chat/chat.component';
+import { DashboardComponent} from './dashboard/dashboard.component'
 
 
-//import{ HeroSearchComponent } from './hero-search.component';
 
 
 
@@ -30,7 +32,9 @@ import { AppRoutingModule } from './routing.module';
     HomeComponent,
     StreamDetailComponent,
     ListComponent,
-    //HeroSearchComponent
+    VideoComponent,
+    ChatComponent,
+    DashboardComponent
   ],
   providers: [ StreamService],
   bootstrap: [ AppComponent ]

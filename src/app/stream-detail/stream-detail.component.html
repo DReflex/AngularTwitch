@@ -1,3 +1,4 @@
+<dashboard></dashboard>
 <div *ngIf="video.stream == null" class="box">
   <a target="_blank" href="{{name.url}}"><h1>{{name.name}} is now Offline</h1></a>
   <img src="{{name.logo}}" alt="">
@@ -10,14 +11,24 @@
 </div>
 
 <div *ngIf="video.stream != null" class="stream">
-  <a target="_blank" href="{{name.url}}"><h1>{{name.name}} is now {{video.stream.stream_type}} </h1></a>
+  <div class="video">
+    <stream [title]='name.name'></stream>
+    <div class="details">
+     <h4>Game: {{name.game}}</h4>
+     <h4><img class="logo" src="http://freevector.co/wp-content/uploads/2012/07/59170-user-filled-person-shape.png" alt=""> {{video.stream.viewers}}</h4>
+    </div>
+    <p style="width:300px;margin:auto;">{{name.status}}</p>
+  </div>
+  <div class="big0">
+    <button class='btn btn-primary'
+        (click)='toggleChat()'>
+        {{showChat ? 'Hide' : 'Show'}} chat
+    </button>
+    <div class="chat" *ngIf='showChat'>
+      <chat [title]='name.name'></chat>
+    </div>
 
- <img src="{{name.logo}}" alt="">
- <div class="details">
-   <h4>Game: {{name.game}}</h4>
-   <h4><img class="logo" src="http://freevector.co/wp-content/uploads/2012/07/59170-user-filled-person-shape.png" alt=""> {{video.stream.viewers}}</h4>
+  </div>
 
- </div>
- <p>{{name.status}}</p>
 
 </div>

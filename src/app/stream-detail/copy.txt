@@ -1,0 +1,9 @@
+<a target="_blank" href="{{name.url}}"><h1>{{name.name}} is now {{video.stream.stream_type}} </h1></a>
+
+<img src="{{name.logo}}" alt="">
+<div class="details">
+ <h4>Game: {{name.game}}</h4>
+ <h4><img class="logo" src="http://freevector.co/wp-content/uploads/2012/07/59170-user-filled-person-shape.png" alt=""> {{video.stream.viewers}}</h4>
+
+</div>
+<p>{{name.status}}</p>

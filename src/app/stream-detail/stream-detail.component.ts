@@ -18,16 +18,15 @@ import { Name } from '../name';
 export class StreamDetailComponent implements OnInit {
   name =[]
   video =[]
-  url;
+url;
+showChat: boolean = true;
 
-  videoURL;
-  safeURL;
+
+
   constructor(
     private streamService: StreamService,
     private route: ActivatedRoute,
     private location: Location,
-    private _sanitizer: DomSanitizer,
-
   ) {};
 
 
@@ -40,12 +39,15 @@ export class StreamDetailComponent implements OnInit {
       .switchMap((params: ParamMap) =>
       this.streamService.getStream(params.get('name')))
       .subscribe(res =>this.video = res);
-
   }
 
 
   goBack(): void{
     this.location.back();
+  }
+
+  toggleChat(): void {
+      this.showChat = !this.showChat;
   }
 
 }

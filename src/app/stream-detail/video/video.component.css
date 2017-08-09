@@ -1,0 +1,11 @@
+
+
+.streaming{
+  margin-left: 5px;
+  width:100%;
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 1px solid black;
+}
